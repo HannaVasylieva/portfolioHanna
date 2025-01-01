@@ -1,0 +1,47 @@
+@import "../../Helpers/Mixins.scss";
+
+.contacts {
+  &__title {
+    color: #fff;
+
+    @include onMobile {
+      font-size: 22px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    @include onMobile {
+      font-size: 15px;
+    }
+
+    &:hover {
+      color: purple;
+    }
+  }
+
+  &__icon {
+    margin-right: 30px;
+
+    @include onMobile {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "Helpers/Mixins.scss";
+
+.app {
+  font-family: "IBM Plex Mono", serif;
+  font-size: 30px;
+  background-color: #000;
+  color: #9c9c9c;
+  height: 100vh;
+  padding: 0px 85px 0px;
+
+  @include onLaptop {
+    padding: 0px 50px 0px;
+  }
+}

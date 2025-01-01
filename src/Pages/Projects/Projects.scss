@@ -1,0 +1,51 @@
+@import "../../Helpers/Mixins.scss";
+
+.projects {
+  &__name {
+    font-size: 25px;
+
+    @include onMobile {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 22px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 7px;
+    transition: all 0.3s ease;
+
+    @include onMobile {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+      color: purple;
+    }
+  }
+}
+
+.swiper {
+  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
