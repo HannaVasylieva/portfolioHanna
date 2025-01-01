@@ -8,7 +8,6 @@
 
     @include onMobile {
       flex-direction: column;
-      justify-content: center;
     }
   }
 
@@ -19,7 +18,8 @@
     margin: 0px 0px 70px;
 
     @include onLaptop {
-      font-size: 60px;
+      font-size: 50px;
+      margin: 0px 0px 30px;
     }
 
     @include onTablet {
@@ -36,11 +36,14 @@
   &__description {
     font-size: 20px;
     line-height: 30px;
-    width: 1000px;
+
+    @include onLaptop {
+      font-size: 18px;
+    }
 
     @include onTablet {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 14px;
+      line-height: 24px;
     }
 
     @include onMobile {
@@ -55,6 +58,10 @@
     }
   }
 
+  &__about {
+    margin: 0px;
+  }
+
   &__img {
     width: 400px;
     height: 400px;
@@ -62,18 +69,17 @@
     object-fit: cover;
 
     @include onLaptop {
-      width: 300px;
-      height: 300px;
-    }
-
-    @include onTablet {
       width: 250px;
       height: 250px;
     }
 
-    @include onMobile {
+    @include onTablet {
       width: 200px;
       height: 200px;
+    }
+
+    @include onMobile {
+      display: none;
     }
   }
 
@@ -82,11 +88,12 @@
     margin-bottom: 80px;
 
     @include onLaptop {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @include onTablet {
-      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
 
     @include onMobile {
@@ -100,11 +107,8 @@
     list-style: none;
     flex-wrap: wrap;
     justify-content: center;
-
-    @include onMobile {
-      margin: 0px;
-      padding: 0px;
-    }
+    margin: 0px;
+    padding: 0px;
   }
 
   &__li {
@@ -128,12 +132,16 @@
       opacity: 30%;
       margin-left: 5px;
 
+      @include onLaptop {
+        font-size: 20px;
+      }
+
       @include onTablet {
         font-size: 16px;
       }
 
       @include onMobile {
-        font-size: 10px;
+        font-size: 8px;
       }
     }
   }
@@ -143,11 +151,6 @@
     height: 64px;
 
     @include onLaptop {
-      width: 40px;
-      height: 40px;
-    }
-
-    @include onTablet {
       width: 30px;
       height: 30px;
     }

@@ -11,11 +11,11 @@
   margin-bottom: 100px;
 
   @include onLaptop {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   @include onTablet {
-    height: 60px;
+    height: 50px;
   }
 
   @include onMobile {
@@ -30,6 +30,7 @@
     transition: all 0.3s ease;
 
     @include onLaptop {
+      font-size: 25px;
       margin-right: 40px;
     }
 

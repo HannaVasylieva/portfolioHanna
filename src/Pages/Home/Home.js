@@ -6,14 +6,13 @@ export const Home = () => {
       <div className="home__info">
         <div className="home__description">
           <h1 className="home__name">Hanna Vasylieva</h1>
-          <p>
+          <p className="home__about">
             Detail-oriented front-end developer with a passion for creating
             functional and visually appealing websites. Have a proven track
             record of building impactful projects using a variety of
             technologies. What drives me is the joy of solving complex problems,
             crafting intuitive user interfaces, and pushing the boundaries of
-            what's possible. I'm eager to contribute my skills to innovative
-            projects that inspire and challenge me.
+            what's possible.
           </p>
         </div>
 
