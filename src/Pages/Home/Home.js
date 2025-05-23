@@ -7,12 +7,12 @@ export const Home = () => {
         <div className="home__description">
           <h1 className="home__name">Hanna Vasylieva</h1>
           <p className="home__about">
-            Detail-oriented front-end developer with a passion for creating
-            functional and visually appealing websites. Have a proven track
-            record of building impactful projects using a variety of
-            technologies. What drives me is the joy of solving complex problems,
-            crafting intuitive user interfaces, and pushing the boundaries of
-            what's possible.
+            Frontend Developer with 2+ years of experience building responsive
+            and high-performance web applications using React, TypeScript, and
+            Redux. Proven track record of reducing page load time by 40% and
+            boosting lead generation by 25% through UI/UX improvements. Skilled
+            in REST API integration, performance optimization, and collaborating
+            in Agile teams to deliver scalable, user-focused solutions.
           </p>
         </div>
 
@@ -26,37 +26,41 @@ export const Home = () => {
 
         <ul className="home__list">
           <li className="home__li">
-            <img src="react.png" alt="react" className="home__icon"/>
+            <img src="react.png" alt="react" className="home__icon" />
             <span className="home__li-text">React & Redux</span>
           </li>
 
           <li className="home__li">
-            <img src="java-script.png" alt="javascript" className="home__icon"/>
+            <img
+              src="java-script.png"
+              alt="javascript"
+              className="home__icon"
+            />
             <span className="home__li-text">Javascript</span>
           </li>
 
           <li className="home__li">
-            <img src="typescript.png" alt="typescript" className="home__icon"/>
+            <img src="typescript.png" alt="typescript" className="home__icon" />
             <span className="home__li-text">Typescript</span>
           </li>
 
           <li className="home__li">
-            <img src="figma.png" alt="Figma" className="home__icon"/>
+            <img src="figma.png" alt="Figma" className="home__icon" />
             <span className="home__li-text">Figma</span>
           </li>
 
           <li className="home__li">
-            <img src="node-js.png" alt="react" className="home__icon"/>
+            <img src="node-js.png" alt="react" className="home__icon" />
             <span className="home__li-text">Node</span>
           </li>
 
           <li className="home__li">
-            <img src="mongo.png" alt="react" className="home__icon"/>
+            <img src="mongo.png" alt="react" className="home__icon" />
             <span className="home__li-text">MongoDB</span>
           </li>
 
           <li className="home__li">
-            <img src="postman.png" alt="react" className="home__icon"/>
+            <img src="postman.png" alt="react" className="home__icon" />
             <span className="home__li-text">Postman</span>
           </li>
         </ul>
