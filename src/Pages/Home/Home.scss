@@ -5,10 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @include onMobile {
-      flex-direction: column;
-    }
+    margin-bottom: 80px;
   }
 
   &__name {
@@ -33,6 +30,17 @@
     }
   }
 
+  &__location {
+    font-style: oblique;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+
+    @include onMobile {
+      font-size: 10px;
+    }
+  }
+
   &__description {
     font-size: 20px;
     line-height: 30px;
@@ -54,12 +62,9 @@
       text-align: center;
       font-size: 10px;
       line-height: 20px;
+      font-weight: 500;
       width: 200px;
     }
-  }
-
-  &__about {
-    margin: 0px;
   }
 
   &__img {
@@ -79,26 +84,29 @@
     }
 
     @include onMobile {
-      display: none;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  &__worked {
+    @include onMobile {
+      margin-bottom: 80px;
     }
   }
 
   &__worked-text {
+    font-size: 35px;
     color: #fff;
-    margin-bottom: 80px;
-
-    @include onLaptop {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 50px;
 
     @include onTablet {
-      margin-top: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
 
     @include onMobile {
-      font-size: 15px;
-      margin-bottom: 5px;
+      font-size: 22px;
+      margin-bottom: 40px;
     }
   }
 
@@ -112,36 +120,63 @@
   }
 
   &__li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(211, 211, 211, 0.2);
-    border-radius: 5%;
-    padding: 8px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  background-color: #C4B5FD;
+  color: #2D1E50;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg);
+    animation: shine 3s infinite linear;
+    z-index: 0;
+  }
+
+  @keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
 
     @include onMobile {
-      margin-right: 5px;
-      margin-bottom: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
     }
 
     &-text {
-      font-size: 25px;
-      color: #fff;
-      opacity: 30%;
-      margin-left: 5px;
-
-      @include onLaptop {
-        font-size: 20px;
-      }
+      font-size: 35px;
+      color: #ffffff;
+      margin-left: 10px;
 
       @include onTablet {
-        font-size: 16px;
+        font-size: 25px;
       }
 
       @include onMobile {
-        font-size: 8px;
+        font-size: 18px;
       }
     }
   }

@@ -1,18 +1,18 @@
 import "./Projects.scss";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "swiper/css/navigation"; 
 
-// import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 export const Projects = () => {
   return (
     <section className="projects">
+      <p className="projects__text">My projects</p>
+
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -26,7 +26,8 @@ export const Projects = () => {
           slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide>

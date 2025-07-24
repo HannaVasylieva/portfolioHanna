@@ -3,12 +3,11 @@
 .app {
   font-family: "IBM Plex Mono", serif;
   font-size: 30px;
-  background-color: #1a1a1a;
-  color: #9c9c9c;
-  height: 100vh;
-  padding: 0px 85px 0px;
+  background: linear-gradient(90deg, rgba(124,58,237,1) 0%, rgba(196,181,253,1) 100%);
+  color: #3f325f;
+  padding: 70px 85px 20px;
 
-  @include onLaptop {
-    padding: 0px 50px 0px;
+  @include onMobile {
+    padding: 50px 20px 20px;
   }
 }

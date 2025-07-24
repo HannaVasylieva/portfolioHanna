@@ -1,15 +1,17 @@
 @import "../../Helpers/Mixins.scss";
 
 .contacts {
-  &__title {
-    color: #fff;
+  color: #fff;
 
+  &__title {
+    font-size: 35px;
     @include onMobile {
       font-size: 22px;
     }
   }
 
   &__list {
+    flex-wrap: wrap;
     list-style: none;
     padding: 0px;
     margin: 0px;

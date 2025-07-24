@@ -3,12 +3,12 @@ import "./Contacts.scss";
 export const Contacts = () => {
   return (
     <section className="contacts">
-      <h2 className="contacts__title">Contact Me</h2>
+      <p className="contacts__title">Contact Me</p>
       <ul className="contacts__list">
         <li className="contacts__item">
           <img className="contacts__icon" src="phone.png" alt="phone icon" />
           <a href="tel:+15872536600" className="contacts__link">
-            +1 (587) 253-600
+            +1 (587) 253-6000
           </a>
         </li>
         <li className="contacts__item">

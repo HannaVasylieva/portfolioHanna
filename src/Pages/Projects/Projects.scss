@@ -1,6 +1,21 @@
 @import "../../Helpers/Mixins.scss";
 
 .projects {
+  &__text {
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: #fff;
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    @include onMobile {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+  }
+
   &__name {
     font-size: 25px;
 
@@ -29,9 +44,13 @@
 }
 
 .swiper {
-  width: 70%;
+  width: 80%;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include onMobile {
+    margin-bottom: 80px;
+  }
 }
 
 .swiper-wrapper {
@@ -48,4 +67,19 @@
 .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+  transition: all 0.3s ease;
+
+  @include onTablet {
+    display: none;
+  }
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: purple;
 }

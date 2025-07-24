@@ -6,6 +6,7 @@ export const Home = () => {
       <div className="home__info">
         <div className="home__description">
           <h1 className="home__name">Hanna Vasylieva</h1>
+          <h2 className="home__location">Located in Canada</h2>
           <p className="home__about">
             Frontend Developer with 2+ years of experience building responsive
             and high-performance web applications using React, TypeScript, and
