@@ -4,31 +4,28 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import "swiper/css/navigation"; 
+import "swiper/css/navigation";
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 export const Projects = () => {
   return (
     <section className="projects">
-      <p className="projects__text">My projects</p>
+      <h2 className="projects__text">My projects</h2>
 
       <Swiper
-        effect={"coverflow"}
+        spaceBetween={10}
         grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={window.innerWidth > 768 ? 3 : 1}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        navigation={true}
+        pagination={{ clickable: true }}
+        navigation={false}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
       >
         <SwiperSlide>
           <img className="projects__img" src="e-store.jpg" alt="laptop" />
@@ -55,7 +52,7 @@ export const Projects = () => {
 
         <SwiperSlide>
           <img className="projects__img" src="cosmetics.jpg" alt="cosmetics" />
-          <h2 className="projects__name">Evergreen-essense: beauty store</h2>
+          <h2 className="projects__name">Evergreen-essense</h2>
           <a
             className="projects__link"
             href="https://evergreen-essense.netlify.app/"
@@ -146,6 +143,29 @@ export const Projects = () => {
           <a
             className="projects__link"
             href="https://github.com/HannaVasylieva/2048-game"
+            aria-label="GitHub code"
+            target="_blank"
+            rel="noreferrer"
+          >
+            👉GitHub code
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="projects__img" src="rocket.png" alt="phone" />
+          <h2 className="projects__name">Rocket launch app</h2>
+          <a
+            className="projects__link"
+            href="https://neo-rocket-app.vercel.app/"
+            aria-label="Double-up game on Javascript"
+            target="_blank"
+            rel="noreferrer"
+          >
+            👉DEMO
+          </a>
+          <a
+            className="projects__link"
+            href="https://github.com/HannaVasylieva/neo-rocketApp"
             aria-label="GitHub code"
             target="_blank"
             rel="noreferrer"

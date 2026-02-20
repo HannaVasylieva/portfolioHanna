@@ -1,6 +1,8 @@
 @import "../../Helpers/Mixins.scss";
 
 .home {
+  margin-bottom: 100px;
+
   &__info {
     display: flex;
     justify-content: space-between;
@@ -120,46 +122,46 @@
   }
 
   &__li {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  border-radius: 12px;
-  border: 1px solid rgba(124, 58, 237, 0.2);
-  background-color: #C4B5FD;
-  color: #2D1E50;
-  z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    background-color: #ede9fe;
+    color: #2d1e50;
+    border: 1px solid #8b5cf6;
+    z-index: 1;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.3) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: skewX(-20deg);
-    animation: shine 3s infinite linear;
-    z-index: 0;
-  }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: skewX(-20deg);
+      animation: shine 3s infinite linear;
+      z-index: 0;
+    }
 
-  @keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
+    @keyframes shine {
+      0% {
+        left: -75%;
+      }
+      100% {
+        left: 125%;
+      }
+    }
 
     @include onMobile {
       margin-right: 10px;
@@ -168,7 +170,7 @@
 
     &-text {
       font-size: 35px;
-      color: #ffffff;
+      color: #2d1e50;
       margin-left: 10px;
 
       @include onTablet {

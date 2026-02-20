@@ -1,10 +1,13 @@
 @import "Helpers/Mixins.scss";
 
+
+
 .app {
   font-family: "IBM Plex Mono", serif;
   font-size: 30px;
-  background: linear-gradient(90deg, rgba(124,58,237,1) 0%, rgba(196,181,253,1) 100%);
-  color: #3f325f;
+  background: linear-gradient(90deg, #5b21b6 0%, #8b5cf6 100%);
+  color: #f3f4f6;
+
   padding: 70px 85px 20px;
 
   @include onMobile {

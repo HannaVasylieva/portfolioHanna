@@ -23,7 +23,7 @@ export const Home = () => {
       </div>
 
       <div className="home__worked">
-        <p className="home__worked-text">Worked with</p>
+        <h2 className="home__worked-text">Worked with</h2>
 
         <ul className="home__list">
           <li className="home__li">
